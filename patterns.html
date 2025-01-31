@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiveWire UI Pattern Library</title>
+    <link rel="stylesheet" href="pattern-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+</head>
+<body>
+    <header class="top-nav">
+        <div class="nav-left">
+            <img src="logo.png?height=40&width=120" alt="LiveWire Logo" class="logo">
+        </div>
+        <div class="nav-center">
+            <h1>LiveWire UI Pattern Library</h1>
+        </div>
+        <div class="nav-right">
+            <button class="nav-button"><a href="index.html"><i class="fas fa-home"></i> Home</a></button>
+            
+        </div>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <div class="nav-group">
+                    <h2>FOUNDATIONS</h2>
+                    <ul>
+                        <li><a href="#color"><i class="fas fa-palette"></i> Color</a></li>
+                        <li><a href="#typography"><i class="fas fa-font"></i> Typography</a></li>
+                        <li><a href="#grid-system"><i class="fas fa-th"></i> Grid System</a></li>
+                       
+                    </ul>
+                </div>
+                <div class="nav-group">
+                    <h2>COMPONENTS</h2>
+                    <ul>
+                        <li><a href="#buttons"><i class="fas fa-square"></i> Buttons</a></li>
+                        <li><a href="#forms"><i class="fas fa-check-square"></i> Forms</a></li>
+                        <li><a href="#cards"><i class="fas fa-credit-card"></i> Cards</a></li>
+                        <li><a href="#navigation"><i class="fas fa-bars"></i> Navigation</a></li>
+                        <li><a href="#modals"><i class="fas fa-window-maximize"></i> Modals</a></li>
+                        
+                        <li><a href="#alerts"><i class="fas fa-exclamation-triangle"></i> Alerts</a></li>
+                        <li><a href="#badges"><i class="fas fa-certificate"></i> Badges</a></li>
+                    </ul>
+                </div>
+                <div class="nav-group">
+                    <h2>PATTERNS</h2>
+                    <ul>
+                        <li><a href="#data-visualization"><i class="fas fa-chart-bar"></i> Data Visualization</a></li>
+                        
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <section id="color">
+                <h2>Color</h2>
+                <p>Our color system helps create hierarchy, communicate status, and add vibrancy to our interface.</p>
+                
+                <h3>Brand Colors</h3>
+                <div class="color-palette">
+                    <div class="color-swatch primary-color">
+                        <div class="swatch-header">
+                            <h4>Primary</h4>
+                            <code>#FF0009</code>
+                        </div>
+                        <table class="contrast-table">
+                            <thead>
+                                <tr>
+                                    <th>On Background</th>
+                                    <th>16px</th>
+                                    <th>24px</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>White text</td>
+                                    <td class="pass">Pass</td>
+                                    <td class="pass">Pass</td>
+                                </tr>
+                                <tr>
+                                    <td>Black text</td>
+                                    <td class="fail">Fail</td>
+                                    <td class="pass">Pass</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="color-swatch secondary-color">
+                        <div class="swatch-header">
+                            <h4>Secondary</h4>
+                            <code>#00FFFF</code>
+                        </div>
+                        <table class="contrast-table">
+                            <thead>
+                                <tr>
+                                    <th>On Background</th>
+                                    <th>16px</th>
+                                    <th>24px</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>White text</td>
+                                    <td class="fail">Fail</td>
+                                    <td class="fail">Fail</td>
+                                </tr>
+                                <tr>
+                                    <td>Black text</td>
+                                    <td class="pass">Pass</td>
+                                    <td class="pass">Pass</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="color-swatch accent-color">
+                        <div class="swatch-header">
+                            <h4>Accent</h4>
+                            <code>#FFFF00</code>
+                        </div>
+                        <table class="contrast-table">
+                            <thead>
+                                <tr>
+                                    <th>On Background</th>
+                                    <th>16px</th>
+                                    <th>24px</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>White text</td>
+                                    <td class="fail">Fail</td>
+                                    <td class="fail">Fail</td>
+                                </tr>
+                                <tr>
+                                    <td>Black text</td>
+                                    <td class="pass">Pass</td>
+                                    <td class="pass">Pass</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <h3>Functional Colors</h3>
+                <div class="color-palette">
+                    <div class="color-swatch success-color">
+                        <div class="swatch-header">
+                            <h4>Success</h4>
+                            <code>#28A745</code>
+                        </div>
+                    </div>
+                    <div class="color-swatch warning-color">
+                        <div class="swatch-header">
+                            <h4>Warning</h4>
+                            <code>#FFC107</code>
+                        </div>
+                    </div>
+                    <div class="color-swatch error-color">
+                        <div class="swatch-header">
+                            <h4>Error</h4>
+                            <code>#DC3545</code>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>Gradient Palette</h3>
+                <div class="color-palette">
+                    <div class="gradient-swatch primary-gradient">
+                        <div class="swatch-header">
+                            <h4>Primary Gradient</h4>
+                            <code>#FF0009 → #FF4D4F</code>
+                        </div>
+                    </div>
+                    <div class="gradient-swatch secondary-gradient">
+                        <div class="swatch-header">
+                            <h4>Secondary Gradient</h4>
+                            <code>#00FFFF → #7AFFFF</code>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>Dark Mode Colors</h3>
+                <div class="color-palette dark-mode">
+                    <div class="color-swatch primary-color">
+                        <div class="swatch-header">
+                            <h4>Primary</h4>
+                            <code>#FF0009</code>
+                        </div>
+                        <table class="contrast-table">
+                            <thead>
+                                <tr>
+                                    <th>On Background</th>
+                                    <th>16px</th>
+                                    <th>24px</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>White text</td>
+                                    <td class="pass">Pass</td>
+                                    <td class="pass">Pass</td>
+                                </tr>
+                                <tr>
+                                    <td>Black text</td>
+                                    <td class="fail">Fail</td>
+                                    <td class="pass">Pass</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="color-swatch secondary-color">
+                        <div class="swatch-header">
+                            <h4>Secondary</h4>
+                            <code>#00FFFF</code>
+                        </div>
+                        <table class="contrast-table">
+                            <thead>
+                                <tr>
+                                    <th>On Background</th>
+                                    <th>16px</th>
+                                    <th>24px</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>White text</td>
+                                    <td class="fail">Fail</td>
+                                    <td class="fail">Fail</td>
+                                </tr>
+                                <tr>
+                                    <td>Black text</td>
+                                    <td class="pass">Pass</td>
+                                    <td class="pass">Pass</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="color-swatch accent-color">
+                        <div class="swatch-header">
+                            <h4>Accent</h4>
+                            <code>#FFFF00</code>
+                        </div>
+                        <table class="contrast-table">
+                            <thead>
+                                <tr>
+                                    <th>On Background</th>
+                                    <th>16px</th>
+                                    <th>24px</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>White text</td>
+                                    <td class="fail">Fail</td>
+                                    <td class="fail">Fail</td>
+                                </tr>
+                                <tr>
+                                    <td>Black text</td>
+                                    <td class="pass">Pass</td>
+                                    <td class="pass">Pass</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section id="typography">
+                <h2>Typography</h2>
+                <p>Our typography system uses a combination of serif and sans-serif fonts to create a balanced and readable design.</p>
+                
+                <h3>Font Families</h3>
+                <div class="typography-example">
+                    <div class="font-family">
+                        <h4 class="roboto">Roboto (Sans-serif)</h4>
+                        <p class="roboto">Used for headers and UI elements</p>
+                        <p class="roboto"><strong>Bold</strong> <em>Italic</em> <u>Underline</u></p>
+                    </div>
+                    <div class="font-family">
+                        <h4 class="merriweather">Merriweather (Serif)</h4>
+                        <p class="merriweather">Used for body text and long-form content</p>
+                        <p class="merriweather"><strong>Bold</strong> <em>Italic</em> <u>Underline</u></p>
+                    </div>
+                </div>
+
+                <h3>Type Scale</h3>
+                <div class="type-scale">
+                    <div class="scale-item">
+                        <h1>Heading 1</h1>
+                        <code>2.5rem / 40px</code>
+                    </div>
+                    <div class="scale-item">
+                        <h2>Heading 2</h2>
+                        <code>2rem / 32px</code>
+                    </div>
+                    <div class="scale-item">
+                        <h3>Heading 3</h3>
+                        <code>1.75rem / 28px</code>
+                    </div>
+                    <div class="scale-item">
+                        <h4>Heading 4</h4>
+                        <code>1.5rem / 24px</code>
+                    </div>
+                    <div class="scale-item">
+                        <p>Body Text</p>
+                        <code>1rem / 16px</code>
+                    </div>
+                    <div class="scale-item">
+                        <p class="small">Small Text</p>
+                        <code>0.875rem / 14px</code>
+                    </div>
+                </div>
+
+                <h3>Line Height Guidelines</h3>
+                <div class="typography-guidelines">
+                    <div class="guideline">
+                        <h4>Headers: 1.2</h4>
+                        <p class="example" style="line-height: 1.2">Example text with 1.2 line height for headers</p>
+                    </div>
+                    <div class="guideline">
+                        <h4>Body: 1.5</h4>
+                        <p class="example" style="line-height: 1.5">Example text with 1.5 line height for better readability in body text</p>
+                    </div>
+                </div>
+
+                <h3>Font Weight Usage</h3>
+                <table class="font-weight-table">
+                    <tr>
+                        <th>Weight</th>
+                        <th>Usage</th>
+                        <th>Example</th>
+                    </tr>
+                    <tr>
+                        <td>400 (Regular)</td>
+                        <td>Body text, paragraphs</td>
+                        <td class="weight-400">Regular text example</td>
+                    </tr>
+                    <tr>
+                        <td>500 (Medium)</td>
+                        <td>Subheadings, emphasis</td>
+                        <td class="weight-500">Medium text example</td>
+                    </tr>
+                    <tr>
+                        <td>700 (Bold)</td>
+                        <td>Headers, strong emphasis</td>
+                        <td class="weight-700">Bold text example</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section id="grid-system">
+                <h2>Grid System</h2>
+                <p>Our responsive grid system ensures consistent layouts across devices.</p>
+                
+                <h3>12-Column Grid</h3>
+                <div class="grid-example">
+                    <div class="row">
+                        <div class="col-12">12 columns</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">6 columns</div>
+                        <div class="col-6">6 columns</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">4 columns</div>
+                        <div class="col-4">4 columns</div>
+                        <div class="col-4">4 columns</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">3 cols</div>
+                        <div class="col-3">3 cols</div>
+                        <div class="col-3">3 cols</div>
+                        <div class="col-3">3 cols</div>
+                    </div>
+                </div>
+
+                <h3>Responsive Breakpoints</h3>
+                <div class="breakpoints-table">
+                    <table>
+                        <tr>
+                            <th>Breakpoint</th>
+                            <th>Range</th>
+                            <th>Device Target</th>
+                        </tr>
+                        <tr>
+                            <td>xs</td>
+                            <td>&lt; 576px</td>
+                            <td>Mobile phones</td>
+                        </tr>
+                        <tr>
+                            <td>sm</td>
+                            <td>≥ 576px</td>
+                            <td>Large phones, tablets</td>
+                        </tr>
+                        <tr>
+                            <td>md</td>
+                            <td>≥ 768px</td>
+                            <td>Tablets, small laptops</td>
+                        </tr>
+                        <tr>
+                            <td>lg</td>
+                            <td>≥ 992px</td>
+                            <td>Laptops, desktops</td>
+                        </tr>
+                        <tr>
+                            <td>xl</td>
+                            <td>≥ 1200px</td>
+                            <td>Large desktops</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <h3>Grid Spacing</h3>
+                <div class="grid-spacing">
+                    <div class="spacing-example">
+                        <h4>Gutters</h4>
+                        <p>Default: 24px between columns</p>
+                        <p>Responsive: 16px on mobile</p>
+                    </div>
+                    <div class="spacing-example">
+                        <h4>Margins</h4>
+                        <p>Container: 5% on desktop</p>
+                        <p>Container: 16px on mobile</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="buttons">
+                <h2>Buttons</h2>
+                <p>Our button styles reflect the energy and vibrancy of LiveWire's brand.</p>
+                
+                <h3>Button Styles</h3>
+                <div class="button-examples">
+                    <button class="btn btn-primary">Primary Button</button>
+                    <button class="btn btn-secondary">Secondary Button</button>
+                    <button class="btn btn-tertiary">Tertiary Button</button>
+                    <button class="btn btn-danger">Danger Button</button>
+                    <button class="btn btn-primary" disabled>Disabled</button>
+                </div>
+
+              
+
+                <h3>Button Sizes</h3>
+                <div class="button-sizes">
+                    <button class="btn btn-primary btn-sm">Small</button>
+                    <button class="btn btn-primary">Medium</button>
+                    <button class="btn btn-primary btn-lg">Large</button>
+                </div>
+
+                <h3>Icon Buttons</h3>
+                <div class="button-icons">
+                    <button class="btn btn-primary"><i class="fas fa-plus"></i> Add</button>
+                    <button class="btn btn-secondary"><i class="fas fa-edit"></i> Edit</button>
+                    <button class="btn btn-danger"><i class="fas fa-trash"></i> Delete</button>
+                </div>
+
+                <h3>Button Guidelines</h3>
+                <div class="button-guidelines">
+                    <div class="guideline">
+                        <h4>Spacing</h4>
+                        <p>Padding: 12px 24px (default)</p>
+                        <p>Margin between buttons: 16px</p>
+                    </div>
+                    <div class="guideline">
+                        <h4>Loading States</h4>
+                        <button class="btn btn-primary loading">
+                            <span class="spinner"></span>
+                            Loading...
+                        </button>
+                    </div>
+                </div>
+
+                
+            </section>
+
+            <section id="forms">
+                <h2>Forms</h2>
+                <p>Our form elements are designed for clarity and ease of use.</p>
+                
+                <form class="form-example">
+                    <div class="form-group">
+                        <label for="text-input">Text Input</label>
+                        <input type="text" id="text-input" placeholder="Enter text">
+                    </div>
+                    <div class="form-group">
+                        <label for="select-input">Select Input</label>
+                        <select id="select-input">
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="textarea-input">Textarea</label>
+                        <textarea id="textarea-input" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="checkbox-container">
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                            Checkbox
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label class="radio-container">
+                            <input type="radio" name="radio" checked="checked">
+                            <span class="radio-checkmark"></span>
+                            Radio Option 1
+                        </label>
+                        <label class="radio-container">
+                            <input type="radio" name="radio">
+                            <span class="radio-checkmark"></span>
+                            Radio Option 2
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+
+                <h3>Form Validation</h3>
+                <form class="form-validation-example">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="valid" value="user@example.com">
+                        <span class="validation-message success">Valid email format</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" class="invalid">
+                        <span class="validation-message error">Password must be at least 8 characters</span>
+                    </div>
+                </form>
+
+                <h3>Input States</h3>
+                <div class="input-states">
+                    <div class="form-group">
+                        <label>Focused State</label>
+                        <input type="text" class="focus" value="Focused input">
+                    </div>
+                    <div class="form-group">
+                        <label>Disabled State</label>
+                        <input type="text" disabled value="Disabled input">
+                    </div>
+                    <div class="form-group">
+                        <label>Read-only State</label>
+                        <input type="text" readonly value="Read-only input">
+                    </div>
+                </div>
+            </section>
+
+            <section id="cards">
+                <h2>Cards</h2>
+                <p>Cards are versatile containers for displaying content and information.</p>
+                
+                <div class="card-examples">
+                    <div class="card">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Card image" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Card Title</h5>
+                            <p class="card-text">This is the type of the card</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Card Title</h5>
+                            <h6 class="card-subtitle">Card Subtitle</h6>
+                            <p class="card-text">This is the type of the card</p>
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>Interactive Cards</h3>
+                <div class="card-examples">
+                    
+                    
+                    <div class="card hoverable">
+                        <div class="card-body">
+                            <h5 class="card-title">Hover Card</h5>
+                            <p>Hover to see animation effect</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>Card Layouts</h3>
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5>Grid Card 1</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5>Grid Card 2</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5>Grid Card 3</h5>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="navigation">
+                <h2>Navigation</h2>
+                <p>Our navigation components provide intuitive ways for users to move through the application.</p>
+                
+                <h3>Navbar</h3>
+                <nav class="navbar">
+                    <a href="#" class="navbar-brand">Brand</a>
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+
+               
+            </section>
+
+            <section id="modals">
+                <h2>Modals</h2>
+                <p>Modals are used to display content in a layer above the app.</p>
+                
+                <button class="btn btn-primary" id="openModal">Open Modal</button>
+                
+                <div class="modal" id="exampleModal">
+                    <div class="modal-content">
+                        <h2>Modal Title</h2>
+                        <p>This is the modal content.</p>
+                        <button class="btn btn-secondary" id="closeModal">Close</button>
+                    </div>
+                </div>
+        
+                
+
+                
+
+            <section id="alerts">
+                <h2>Alerts</h2>
+                <p>Alerts provide contextual feedback messages for typical user actions.</p>
+                
+                <div class="alert alert-success">
+                    <strong>Success!</strong> This is a success alert.
+                </div>
+                <div class="alert alert-info">
+                    <strong>Info!</strong> This is an info alert.
+                </div>
+                <div class="alert alert-warning">
+                    <strong>Warning!</strong> This is a warning alert.
+                </div>
+                <div class="alert alert-danger">
+                    <strong>Danger!</strong> This is a danger alert.
+                </div>
+
+                
+
+               
+            </section>
+
+            <section id="badges">
+                <h2>Badges</h2>
+                <p>Badges are used to add additional information to interface elements.</p>
+                
+                <div class="badge-examples">
+                    <span class="badge badge-primary">Primary</span>
+                    <span class="badge badge-secondary">Secondary</span>
+                    <span class="badge badge-success">Success</span>
+                    <span class="badge badge-danger">Danger</span>
+                    <span class="badge badge-warning">Warning</span>
+                    <span class="badge badge-info">Info</span>
+                </div>
+            </section>
+            <section id="data-visualization">
+                <h2>Data Visualization</h2>
+                <p>Interactive charts and graphs built with D3.js for data visualization.</p>
+              
+                <div class="chart-grid">
+                  <div class="chart-container" id="chart1">
+                    <h3>Proportion of YouTube Channels by Category</h3>
+                  </div>
+              
+                  <div class="chart-container" id="chart2">
+                    <h3>Relationship Between Likes and Subscribers</h3>
+                  </div>
+              
+                  <div class="chart-container" id="chart3">
+                    <h3>YouTube Channels by Country</h3>
+                  </div>
+              
+                  <div class="chart-container" id="chart4">
+                    <h3>Top 5 Channels' Average Yearly View Changes</h3>
+                  </div>
+              
+                  <div class="chart-container" id="chart5">
+                    <h3>Top 5 Channels' Quarterly Income</h3>
+                  </div>
+              
+                  <div class="chart-container" id="chart6">
+                    <h3>Channels by Category (Interactive by Country)</h3>
+                  </div>
+              
+                  <div class="chart-container" id="chart7">
+                    <h3>Category with the Most Subscribers</h3>
+                  </div>
+              
+                  <div class="chart-container" id="chart8">
+                    <h3>Country with the Most YouTubers</h3>
+                  </div>
+              
+                  <div class="chart-container" id="chart9">
+                    <h3>Channel with the Most Subscribers</h3>
+                  </div>
+                </div>
+              </section>
+              
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 LiveWire. All rights reserved.</p>
+    </footer>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="script.js"></script>
+    <script src="charts.js"></script>
+</body>
+</html>
